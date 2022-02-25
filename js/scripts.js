@@ -1,5 +1,3 @@
-let myName = 'bob';
-document.write(myName);
-
-myName = 'John Doe';
-document.write(myName);
+alert('Hello World');
+let favoriteFood = 'bbq ribs';
+document.write(favoriteFood);
