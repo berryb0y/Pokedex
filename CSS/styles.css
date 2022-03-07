@@ -1,0 +1,11 @@
+body {
+  margin: 50px;
+}
+.pokemonlogo {
+  padding-bottom: 2rem;
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
