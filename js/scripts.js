@@ -32,7 +32,7 @@ let pokemonList = [
         pokemonList.push(pokemon);
     }
 
-    function getAll(pokemonList){
+    function getAll(){
         return pokemonList;
     }
 
@@ -43,16 +43,18 @@ let pokemonList = [
 })();
 
 
-function pokemons(pokemon){
-    if (list[i].height > 1.5){
-        document.write(list[i].name + " " + list[i].height + "m " + " This is a big pokemon!! <br/>")
-        }else if (list[i].height > 0.5 && list[i].height < 1.5){
-        document.write(list[i].name + " " + list[i].height + "m <br/>")
-         }else {document.write(list[i].name + " " + list[i].height + "m <br/>")};
-};
 
-pokemonRepository.getAll().forEach(pokemons);
 
+pokemonRepository.getAll().forEach(function(pokemon){
+    if (pokemon.height > 1.5){
+        document.write(pokemon.name + " " + pokemon.height + "m " + " This is a big pokemon!! <br/>")
+    }
+    else if (pokemon.height > 0.5 && pokemon.height < 1.5){
+            document.write(pokemon.name + " " + pokemon.height + "m <br/>")
+    }
+    else {
+        document.write(pokemon.name + " " + pokemon.height + "m <br/>")};
+});
 
 
 
