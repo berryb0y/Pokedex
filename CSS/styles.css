@@ -30,9 +30,9 @@ ul {
   cursor: pointer;
 }
 
-/* .water{
-  background:blue;
-} */
+.water {
+  background: blue;
+}
 
 @media all and (min-width: 650px) {
   .pokemonlogo {

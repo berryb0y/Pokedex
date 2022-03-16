@@ -31,7 +31,7 @@ let pokemonList = [
     function add(pokemon){
         pokemonList.push(pokemon);
     }
-
+// logs pokemon stats
     function showDetails(pokemon){
         console.log(pokemon);
     }
@@ -47,6 +47,12 @@ let pokemonList = [
         button.addEventListener('click', function (){
             showDetails(pokemon);
         })
+        
+
+        // if (pokemon.type == "water") {
+        //     pokemon.classList.add('water');
+        // };
+
     }
 
     function getAll(){
