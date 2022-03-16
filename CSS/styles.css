@@ -1,11 +1,14 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 50px;
   background: #ffffdd;
 }
 .pokemonlogo {
-  padding-bottom: 2rem;
   width: 100%;
   height: auto;
+  padding-bottom: 2rem;
 }
 .layout {
   display: flex;
@@ -25,4 +28,14 @@ ul {
   width: 250px;
   margin-bottom: 5px;
   cursor: pointer;
+}
+
+/* .water{
+  background:blue;
+} */
+
+@media all and (min-width: 650px) {
+  .pokemonlogo {
+    width: 60%;
+  }
 }
