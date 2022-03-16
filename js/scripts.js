@@ -32,29 +32,75 @@ let pokemonList = [
         pokemonList.push(pokemon);
     }
 
+    function showDetails(pokemon){
+        console.log(pokemon);
+    }
+
+    function addListItem(pokemon){
+        let pokemonList = document.querySelector('.pokemon-list');
+        let listPokemon = document.createElement('li');
+        let button = document.createElement('button');
+        button.innerText = pokemon.name;
+        button.classList.add('btn-primary');
+        listPokemon.appendChild(button);
+        pokemonList.appendChild(listPokemon);
+        button.addEventListener('click', function (){
+            showDetails(pokemon);
+        })
+    }
+
     function getAll(){
         return pokemonList;
     }
 
     return{
         add: add,
-        getAll: getAll
+        getAll: getAll,
+        addListItem: addListItem
     };
+
 })();
 
 
 
 
 pokemonRepository.getAll().forEach(function(pokemon){
-    if (pokemon.height > 1.5){
-        document.write(pokemon.name + " " + pokemon.height + "m " + " This is a big pokemon!! <br/>")
-    }
-    else if (pokemon.height > 0.5 && pokemon.height < 1.5){
-            document.write(pokemon.name + " " + pokemon.height + "m <br/>")
-    }
-    else {
-        document.write(pokemon.name + " " + pokemon.height + "m <br/>")};
+    pokemonRepository.addListItem(pokemon)
+
+    // why use pokemonRepository.addListItem(pokemon) instead of 
+    //                          addListItem(pokemon)
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// OLD POKEMON IF ELSE STATEMENT
+
+// if (pokemon.height > 1.5){
+//     document.write(pokemon.name + " " + pokemon.height + "m " + " This is a big pokemon!! <br/>")
+// }
+// else if (pokemon.height > 0.5 && pokemon.height < 1.5){
+//         document.write(pokemon.name + " " + pokemon.height + "m <br/>")
+// }
+// else {
+//     document.write(pokemon.name + " " + pokemon.height + "m <br/>")};
+
+
+
+
 
 
 
