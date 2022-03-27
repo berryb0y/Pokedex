@@ -32,11 +32,18 @@ ul {
   width: 250px;
   margin-bottom: 5px;
   cursor: pointer;
+  background-color: #d3d3d3;
 }
-
+.btn-primary:hover {
+  border: green solid 5px;
+}
+/* button class colors */
 .water {
   background: blue;
 }
+/* .grass {
+  background-image: linear-gradient(to right, #d3d3d3, #d3d3d3, #7ac74c);
+} */
 
 #modal-container {
   display: none;
