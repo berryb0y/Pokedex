@@ -11,7 +11,6 @@ let pokemonRepository = (function () {
     }
 
 
-
     function addListItem(pokemon){
         let pokemonList = document.querySelector('.pokemon-list');
         let listPokemon = document.createElement('li');
@@ -19,6 +18,7 @@ let pokemonRepository = (function () {
         button.innerText = pokemon.name;
         button.classList.add('btn-primary');
         button.classList.add('show-modal');
+        button.classList.add('group-list-item');
         listPokemon.appendChild(button);
         pokemonList.appendChild(listPokemon);
         button.addEventListener('click', function (){
@@ -26,12 +26,12 @@ let pokemonRepository = (function () {
         })
         
 
-        if (pokemon.types.map == "water") {
-            button.classList.add('water');
-        }; 
-      if (pokemon.type == "grass"){
-           button.classList.add('grass');
-       };
+      //   if (pokemon.types.map == "water") {
+      //       button.classList.add('water');
+      //   }; 
+      // if (pokemon.type == "grass"){
+      //      button.classList.add('grass');
+      //  };
 
     }
 
