@@ -16,9 +16,8 @@ let pokemonRepository = (function () {
         let listPokemon = document.createElement('li');
         let button = document.createElement('button');
         button.innerText = pokemon.name;
-        button.classList.add('btn-primary');
-        button.classList.add('show-modal');
-        button.classList.add('group-list-item');
+        button.classList.add('btn-primary', 'show-modal', 'group-list-item');
+        button.setAttribute('data-toggle', 'modal');
         listPokemon.appendChild(button);
         pokemonList.appendChild(listPokemon);
         button.addEventListener('click', function (){
@@ -102,6 +101,7 @@ function hideModal(){
   closeButtonElement.classList.add('modal-close');
   closeButtonElement.innerText = 'X';
   closeButtonElement.addEventListener('click', hideModal);
+  closeButtonElement.setAttribute('aria-label', 'close');
 
   modalContainer.addEventListener('click', (e) => {
 //only closes if clicking on the overlay
@@ -110,9 +110,6 @@ function hideModal(){
       hideModal();
     }
   });
-
-
-
 // add new modal content
   let pokemonName = document.createElement('h1');
   pokemonName.innerText = name;
