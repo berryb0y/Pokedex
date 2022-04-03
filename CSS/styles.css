@@ -107,7 +107,7 @@ ul {
   text-transform: capitalize;
 }
 .modal p {
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 1.5rem;
 }
 .modal-close {
@@ -125,6 +125,7 @@ ul {
   border: 15px solid black;
   background: white;
   border-radius: 50%;
+  margin-top: 1.3rem;
 }
 
 /* title */
@@ -151,7 +152,7 @@ ul {
     font-size: 0.6rem;
   }
   .pokeimg {
-    margin-top: -8px;
+    margin-top: 0.8rem;
     width: 100px;
     height: 100px;
     display: inline-block;
@@ -174,7 +175,7 @@ ul {
     font-size: 1.2rem;
   }
   .pokeimg {
-    margin-top: -8px;
+    margin-top: 0rem;
     width: 75px;
     height: 75px;
     display: inline-block;
