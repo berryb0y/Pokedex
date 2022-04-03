@@ -8,8 +8,15 @@ body {
 ul {
   list-style-type: none;
 }
+.navbar {
+  box-shadow: 0 0 10px 0;
+}
+.andrewlogo {
+  border-radius: 10%;
+}
 .pokeball-background {
   position: fixed;
+  margin-top: 2rem;
   z-index: -5;
   width: 100%;
   opacity: 0.1;
@@ -22,6 +29,7 @@ ul {
 .pokemonlogo {
   width: 100%;
   height: auto;
+  margin-top: 1rem;
   padding-bottom: 2rem;
 }
 .layout {
